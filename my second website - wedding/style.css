@@ -1,0 +1,412 @@
+/*########ELEMENT DEFAULTS########*/
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    background-image: url(image1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1;
+    margin: 0 auto;
+    display: block;
+    background-position: center;
+}
+
+label{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+h1{
+    line-height: 3rem;
+    font-size: 30;
+    padding-top: 30px;
+}
+
+h2, h3{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+div.pictures img{
+    max-width: 375px;
+    height: auto;
+    padding: 12px 12px 50px 12px;
+    opacity: 1;
+    display: block;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 16px 13px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 2px;
+}
+
+article p{
+    font-size: 30px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+
+/*##########NAV BAR###############*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color:#ddd;
+    overflow: hidden;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    list-style: none;
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: darkslategrey;
+}
+
+ul.topnav li a:hover{
+    background-color: #00080ff;
+    color: white;
+}
+
+ul.topnav li.dropdownicon{
+    display:none;
+}
+
+/*##############LANDING PAGE and WHERE PAGE TABLES###################*/
+
+div.match h1{
+    font-size: 80px;
+}
+
+ul.firstnav li, ul.gettingthere li {
+    list-style: none;
+}
+
+.firstnavdiv ul.firstnav li a.buttonclass, .gettingtherediv ul.gettingthere li a.buttonclass {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: darkslategrey;
+    background-color: lightgrey;
+    opacity: .75;
+    border: 2px solid darkgrey;
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+ul.firstnav li a:hover, ul.gettingthere li a:hover, ul.footerclass li a:hover {
+    background-color: #00080ff;
+    color: white;
+} 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 100%;
+/*    margin-left: -60px;*/
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*####################CUSTOM STYLES##################*/
+
+#Contact-us-gradient {
+    background: #90c2e7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#90c2e7, #4e8098); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#90c2e7, #4e8098); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#90c2e7, #4e8098); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#90c2e7, #4e8098); /* Standard syntax */
+}
+
+ul.hide {
+    display: none;
+}
+
+.match h1{
+    color: black;
+    font-family: 'Tangerine', cursive; 
+    text-align: center;
+}
+
+.formatting{
+    text-align: center;
+    font-size: 25px;
+    line-height: 2em;
+    color: red;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+}
+
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    padding: 15px;
+    float: left;
+}
+
+div.leftside-col{
+    margin-left: 30%;
+}
+
+div.rightside-col iframe {
+    margin-left: 15%;
+}
+
+h2.contactform, h2.contactform form h3 {
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+}
+    
+ul.gettingthere ul.appear, ul.gettingthere ul.appear{
+    display: block;
+    line-height: 2;
+    padding-top: 2px;
+    background-color: slategrey;
+    opacity: .9;
+    margin: 0 auto;
+    margin-top: 6;
+    padding: 0 auto;
+    width: 90%;
+}
+
+input[type="text"], input[type="email"], input[type="checkbox"], input[type="submit"] {
+    font-size: 20px;
+    width: 95%;
+    min-width: 150px;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+}
+
+input [type="checkbox"] {
+    align-self: center;
+    text-align: center;
+}
+
+div.rsvp form {
+    background-color: whitesmoke;
+    opacity: .95;
+    margin: 50px 10% 50px 10%;
+    padding: 50px 0 50px 0;
+    min-width: 150px;
+}
+
+div.container {
+    border-style: none;
+    padding: 5px;
+}
+
+h1.contactusheader{
+    background-color: slategrey;
+    font-size: 60px;
+    text-align: center;
+    padding: 5%;
+}
+
+div.box{
+    text-align: center;
+    line-height: 1.2;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 15px 15px 10px 0px rgba(0,0,0,.15);
+}
+
+div.icon{
+    width: 100%;
+}
+
+div.cowParsley img{
+    box-shadow: 15px 15px 10px 0px rgba(0,0,0,.15);
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+}
+
+footer.footsy {
+    background-color: #ddd;
+}
+
+footer.footsy h2{
+    text-transform: uppercase;
+    padding-left: 0;
+    text-align: left;
+}
+
+footer.footsy ul{
+    padding-left: 0;
+}
+
+ul.footerclass li {
+    list-style: none;
+}
+
+ul.footerclass li a{
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+/*##############MObILE###################*/
+
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    div.col-6, div.col-4, div.col-7, div.col-5 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.leftside-col, div.rightside-col{
+        margin: 15px;
+    }
+    
+    div.videocontainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    
+    div.pictures img{
+        width: 100%;
+        margin: 0;
+        max-width: none;
+    }
+    
+    div.cowparsley img{
+        width: 100%;
+        margin: 0;
+        max-width: none;       
+    }
+    
+}
+
+

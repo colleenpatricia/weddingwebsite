@@ -1,0 +1,132 @@
+<!DOCTYPE.html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300|Tangerine" rel="stylesheet">
+    <script type=text/javascript src="Scripts.js"></script>
+</head>
+<body>
+<nav>
+    <ul class="topnav" id="dropdownclick">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Essentials">Essentials</a></li>
+        <li><a href="#When">When</a></li>
+        <li><a href="where.html">Where</a></li>
+        <li><a href="#Accommodation">Accommodation</a></li>
+        <li><a href="#Photos">Photos</a></li>
+        <li class="topnav-right"><a href="contactus.html">Contact Us</a></li>
+        <li class="topnav-right"><a href="#RSVP">RSVP</a></li>
+        <li class="dropdownIcon"><a href="javascript: void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+</nav>  
+
+<div class="container" id="Contact-us-gradient">
+    <div class="row">
+        <p><i>Dudes, you could just text us, yea?<BR> But Colleen wanted to learn how to do a form, so here ya go.</i></p>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="leftside-col">
+                <h2 class="contactform">Contact Us</h2>
+            </div>
+            <form>
+                <div class="leftside-col">
+                    <h3>Name</h3>
+                    <input class="contactusinput" type="text" placeholder="Enter name here">
+                    <h3>Email</h3>
+                    <input class="contactusinput" type="email" placeholder="Enter email here">
+                    <h3>Message</h3>
+                    <input class="contactusinput" type="text" placeholder="Enter message here">
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <div>
+                <div class="rightside-col videocontainer">
+                    <video src="Video.MOV" width="560" height="315" frameborder="0" type=video/mov autostart=true allowfullscreen>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+    
+<header>
+    <h1 class="Contactusheader">Other Ways you can Contact Us</h1>
+</header> 
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="PalmLeadVectors.jpg">
+                </div>
+                <label>Call us</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare tempor sem sit amet rutrum. Mauris imperdiet ligula ligula, vel maximus orci egestas non. Integer pretium justo a tellus condimentum, vitae pulvinar massa gravida. Nullam porttitor dolor id ligula vulputate cursus. Nulla molestie pretium orci sit amet viverra. Integer in lacinia quam. Nam pulvinar tortor et rutrum tristique.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="PalmLeadVectors.jpg">
+                </div>
+                <label>Text us</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare tempor sem sit amet rutrum. Mauris imperdiet ligula ligula, vel maximus orci egestas non. Integer pretium justo a tellus condimentum, vitae pulvinar massa gravida. Nullam porttitor dolor id ligula vulputate cursus. Nulla molestie pretium orci sit amet viverra. Integer in lacinia quam. Nam pulvinar tortor et rutrum tristique.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="PalmLeadVectors.jpg">
+                </div>
+                <label>Write to us</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare tempor sem sit amet rutrum. Mauris imperdiet ligula ligula, vel maximus orci egestas non. Integer pretium justo a tellus condimentum, vitae pulvinar massa gravida. Nullam porttitor dolor id ligula vulputate cursus. Nulla molestie pretium orci sit amet viverra. Integer in lacinia quam. Nam pulvinar tortor et rutrum tristique.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare tempor sem sit amet rutrum. Mauris imperdiet ligula ligula, vel maximus orci egestas non. Integer pretium justo a tellus condimentum, vitae pulvinar massa gravida. Nullam porttitor dolor id ligula vulputate cursus. Nulla molestie pretium orci sit amet viverra. Integer in lacinia quam. Nam pulvinar tortor et rutrum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare tempor sem sit amet rutrum. Mauris imperdiet ligula ligula, vel maximus orci egestas non. Integer pretium justo a tellus condimentum, vitae pulvinar massa gravida. Nullam porttitor dolor id ligula vulputate cursus. </p>
+            </article>
+        </div>
+        <div class="col-5">
+            <div class="cowParsley">
+                <img src="CowParsley.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footsy">
+    <div class="row">
+        <div class="col-3">
+            <div>
+                <h2>About the wedding</h2>
+                <ul class="footerclass">
+                    <li><a href="#when">Timings</a></li>
+                    <li><a href="#where">Accommodation</a></li>
+                    <li><a href="*RSVP">RSVP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    
+<script>
+    function dropdownMenu() {
+        var x = document.getElementById("dropdownclick");
+        if(x.className === "topnav") {
+            x.className += " responsive";
+            /*Change topnav to topnav responsive*/    
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>    
+
+</body>

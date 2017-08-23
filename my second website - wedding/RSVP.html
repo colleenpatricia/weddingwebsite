@@ -1,0 +1,85 @@
+<!DOCTYPE.html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300|Tangerine" rel="stylesheet">
+    <script type=text/javascript src="Scripts.js"></script>
+</head>
+<body>
+<nav>
+    <ul class="topnav" id="dropdownclick">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Essentials">Essentials</a></li>
+        <li><a href="#When">When</a></li>
+        <li><a href="where.html">Where</a></li>
+        <li><a href="#Accommodation">Accommodation</a></li>
+        <li><a href="#Photos">Photos</a></li>
+        <li class="topnav-right"><a href="contactus.html">Contact Us</a></li>
+        <li class="topnav-right"><a href="#RSVP">RSVP</a></li>
+        <li class="dropdownIcon"><a href="javascript: void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+</nav>  
+    
+
+<div>
+    <h2>RSVP</h2>
+</div>
+<div class = "rsvp">
+    <form id="rsvpForm">
+        <div>
+            <h3>First Name</h3>
+            <input class="rsvpInput" type="text" placeholder="Enter first name here">
+            <h3>Last Name</h3>
+            <input class="rsvpInput" type="text" placeholder="Enter last name">
+            <h3>Vegetarian?</h3>
+            <input class="rsvpInput" type="checkbox"  placeholder="Enter message here">
+            <h3>Other dietary requirements?</h3>
+            <input class="rsvpInput" type="text"  placeholder="Eg allergic to pineapple">
+            <br>
+            <input class="rsvpInput" type="submit" onclick="Guest()">
+        </div>
+    </form>
+</div>
+
+<script>
+function dropdownMenu() {
+        var x = document.getElementById("dropdownclick");
+        if(x.className === "topnav") {
+            x.className += " responsive";
+            /*Change topnav to topnav responsive*/    
+        } else {
+            x.className = "topnav";
+        };
+}
+    
+function showTravel() {
+    var x = document.getElementById("gettingThereClick"); 
+    var y = document.getElementById("toDoClick");
+    
+        if(x.className === "hideTravel" && y.className === "hideToDo appear") {
+            x.className += " appear";
+            y.className = "hideToDo" ;
+            /*Change gettingthere to gettingthere responsive*/    
+        } else if (x.className === "hideTravel") {
+            x.className += " appear";
+        } else {
+            x.className = "hideTravel";
+        }
+}
+    
+function Guest(firstName, lastName, dietary) {
+    var x = document.getElementbyId("to")
+    var firstName = firstName;
+    this.lastName = lastName;
+    this.dietary = dietary;
+    this.greeting = function() {
+        if (this.dietary === "veggie") {
+        alert("Hey there " + this.firstName + "! Thanks for RSVPing to our wedding! We can't wait to see you there. And we'll make sure there's some " + this.dietary + " options for you, don't worry. See you then!");
+    } else {
+        alert("Hey there " + this.firstName + "! Thanks for RSVPing to our wedding! We can't wait to see you there.");
+    }
+};
+}
+    
+</script>   
+</body>
