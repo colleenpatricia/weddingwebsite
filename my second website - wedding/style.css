@@ -16,6 +16,10 @@ footer{
     background-position: center;
 }
 
+.photoBackground {
+    background-color: whitesmoke;
+}
+
 label{
     font-size: 35px;
     font-weight: bold;
@@ -37,7 +41,7 @@ h2, h3{
 div.pictures img{
     max-width: 375px;
     height: auto;
-    padding: 12px 12px 50px 12px;
+    padding: 12px 12px 65px 12px;
     opacity: 1;
     display: block;
     margin: auto;
