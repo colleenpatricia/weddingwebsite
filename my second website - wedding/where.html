@@ -50,7 +50,6 @@
                             <li>Tanks</li>
                             <li>Monkeys</li>
                             <li>Lighthouse</li>
-                        </div>
                     </ul>
             </ul>
     </ul>
@@ -81,9 +80,10 @@ function showToDo() {
     showHide(show, hide);
 };
     
+console.log(show.classname);
 function showHide(show, hide) {
-    if (show.className = "appear") {
-        show.classname = "hide";
+    if (show.className === "appear") {
+        show.className = "hide";
     } else {
     show.className = "appear";
     };
